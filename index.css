@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.first-view{
+  height: calc(100vh - 110px);
+  background-image: url(../image/index/main-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-bottom: 60px;
+  padding-top: 500px;
+  color: #000000;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  opacity: 0; /* 最初は非表示 */
+  animation: fadeIn 1s ease-in-out forwards; /* fadeInという名前のアニメーションを適用 */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* 20px上に移動しながら */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* 通常位置に移動する */
+  }
+}
+
+.first-view-text h1 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 72px;
+}
+
+.first-view-text p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.lead {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.lead p {
+  line-height: 2;
+  text-align: center;
+  opacity: 0; /* 最初は非表示 */
+  animation: fadeIn 1s ease-in-out forwards; /* fadeInという名前のアニメーションを適用 */
+  font-family: "Zen Maru Gothic", serif;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-button {
+  background-color: #A0A5A5;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.link-button:hover {
+  background-color:gray;
+}
+
+.work h2{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 100px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+}
+
+.work h2::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #000000;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap; /* アイテムを折り返して表示 */
+  justify-content: space-between; /* アイテムを均等に配置 */
+  padding: 60px 30px 10px; /* 上下左右のパディングを調整 */
+}
+
+.item-list li {
+  flex: 0 1 calc(32% - 20px); /* 幅を33.33%に設定し、間隔を20px空ける */
+  margin-bottom: 70px; /* 下のマージンを追加してアイテムを整列 */
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.item-list li img {
+  transition: transform 0.3s ease;
+}
+
+.item-list li:hover {
+  transform: scale(1.1);
+}
+
+.item-list li:hover img {
+  transform: scale(1.0);
+}
+
+.item-list li:first-child {
+  margin-left: 0; /* 最初のアイテムは左にマージンを追加しない */
+}
+
+.item-list dl {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.item-list dd {
+  font-size: 13px;
+  line-height:20px;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .first-view {
+    height: calc(100vh - 0px);
+    background-image: url(../image/index/main-img-sp.png);
+    align-items: flex-start;
+  }
+
+  .first-view-text {
+    padding-top: 120px;
+    padding-left: 20px;
+  }
+
+  .first-view-text h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .first-view-text p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .lead {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .lead p {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .item-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .item-list li {
+    flex: 0 1 calc(100% - 20px); /* レスポンシブ時は50%に調整 */
+  }
+
+  .p {
+    font-size: 12px;
+  }
+}
