@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+.main {
+  margin-bottom: 0;
+  background-color: #f9f9f9;
+  padding-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* 20px上に移動しながら */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* 通常位置に移動する */
+  }
+}
+
+.video {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #f8f8f8;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 120px;
+}  
+
+.video video {
+  width: 100%; /* 要素の幅を100%に設定 */
+  height: auto; 
+}
+
+.video h1 {
+  padding-bottom: 70px;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  max-width: 95%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  padding-bottom: 50px;
+}
+
+.reverse {
+  flex-direction:inherit;
+}
+
+.feature img {
+  width: 550px;
+  opacity: 0; /* 最初は非表示 */
+  animation: fadeIn 1s ease-in-out forwards; /* fadeInという名前のアニメーションを適用 */
+  font-family: "Zen Maru Gothic", serif;
+}
+
+.feature-text {
+  max-width: 500px;
+  margin-right: 60px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 2;
+  text-align: left;
+  opacity: 0; /* 最初は非表示 */
+  animation: fadeIn 1s ease-in-out forwards; /* fadeInという名前のアニメーションを適用 */
+}
+
+.feature-text h2 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.feature-text p {
+  font-size: 15px;
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400;
+}
+
+.title h1 {
+  flex-wrap: wrap;
+  text-align: center;
+  display: block;
+  margin-top: 70px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+}
+
+.title h1::after {
+  content: "";
+  display:block;
+  width: 36px;
+  height:3px;
+  background-color: #000000;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.point{
+  max-width: 1200px;
+  margin: 60px auto;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+}
+
+.point h2 {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.point p {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 400; 
+  line-height: 2;
+  text-align:left;
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .feature {
+    flex-direction: column-reverse; 
+    width: 500px;
+    margin-top: 45px;
+  }
+
+  .feature img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .feature-text {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .feature-text h2 {
+    font-size: 20px;
+  }
+
+  .feature-text p {
+    font-size: 12px;
+  }
+
+  .point {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
+
+  .point h2 {
+    font-size: 20px;
+  }
+  .point p {
+    font-size: 12px;
+  }
+
+  .video h1 {
+    font-size: 20px;
+  }
+
+
+}
