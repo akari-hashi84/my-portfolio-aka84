@@ -6,7 +6,7 @@ html {
 
 .first-view{
   height: calc(100vh - 110px);
-  background-image: url(../image/index/main-img.png);
+  background-image: url(https://akari-hashi84.github.io/my-portfolio-aka84/image/index/main-img.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -158,7 +158,7 @@ html {
 @media (max-width: 800px) {
   .first-view {
     height: calc(100vh - 0px);
-    background-image: url(../image/index/main-img-sp.png);
+    background-image: url(https://akari-hashi84.github.io/my-portfolio-aka84/image/index/main-img-sp.png);
     align-items: flex-start;
   }
 
