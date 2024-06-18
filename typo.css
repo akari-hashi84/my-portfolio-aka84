@@ -77,7 +77,7 @@ small{
   display: flex;
   justify-content: center;
   align-items: center;
-  background:url("../image/work/typo.png") no-repeat center;
+  background:url("https://akari-hashi84.github.io/my-portfolio-aka84/image/work/typo.png") no-repeat center;
   background-size:cover;
   color:#f9f9f9;
   opacity: 0; /* 最初は非表示 */
@@ -131,7 +131,7 @@ section{
     position:relative!important;/*position stickyを解除*/
   width:100%;/*横幅を100%にして1列に見せる*/
   height: 40vh;/*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
-  background:url("../image/work/sp-typo.png") no-repeat center;
+  background:url("https://akari-hashi84.github.io/my-portfolio-aka84/image/work/sp-typo.png") no-repeat center;
 }
 
 #container{
