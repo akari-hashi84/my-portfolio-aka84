@@ -3,6 +3,7 @@
 .main {
   margin-bottom: 0;  opacity: 0; /* 最初は非表示 */
   animation: fadeIn 1s ease-in-out forwards; /* fadeInという名前のアニメーションを適用 */
+  background-color: #f9f9f9;
 }
 
 .feature {
