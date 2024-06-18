@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.main {
+  background-color: #f9f9f9;
+}
+
 .first-view{
   height: calc(100vh - 110px);
   background-image: url(https://akari-hashi84.github.io/my-portfolio-aka84/image/index/main-img.png);
