@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>akari's portfolio contact</title>
+  <meta name="description" content="ページの概要文を記載します">
+  <meta name="viewport" content="width=device-width">
+  <script src="../js/toggle-menu.js"></script>
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="../css/contact.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--header ここから-->
+  <header class="header">
+    <div class="header-inner">
+      <a class="header-logo" href="./index.html">
+        <img src="../image/common/logo.png" alt="Akari">
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+      <nav class="site-menu">
+        <ul class="gnavi">
+          <li><a href="./index.html">top</a></li>
+          <li><a href="./index.html#work">work</a></li>
+          <li><a href="./about.html">about</a></li>
+          <li><a href="./contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+
+<!--header ここまで-->
+<!--main ここから-->
+  <main class="main">
+    <div class="contact">
+      <h2>お問い合わせフォーム</h2>
+      <form action="#">
+        <dl class="form-area">
+        <dt><span class="required">お名前</span></dt>
+        <dd><input class="input-text" type="text" name="name" required></dd>
+        <dt><span class="required">メールアドレス</span></dt>
+        <dd><input class="input-text" type="email" name="email" required></dd>
+        <dt>お電話番号</dt>
+        <dd><input class="input-text" type="tel" name="tel" required></dd>
+        <dt>お問い合わせ種別</dt>
+        <dd>
+          <select class="select-box" name="genre">
+            <option value="作品について" selected>作品について</option>
+            <option value="ご依頼について">ご依頼について</option>
+            <option value="その他">その他</option>
+          </select>
+        </dd>
+        <dt>お客様について</dt>
+        <dd>
+          <label class="radio-button"><input type="radio" name="user-type" value="一般のお客様" checked>一般のお客様</label>
+          <label class="radio-button"><input type="radio" name="user-type" value="お取引先様">お取引先様</label>
+          <label class="radio-button"><input type="radio" name="user-type" value="その他">その他</label>
+        </dd>
+        <dt><span class="required">お問い合わせ内容</span></dt>
+        <dd><textarea class="message" name="message" required></textarea></dd>
+      </dl>
+      <p class="confirm-text">ご入力内容をご確認の上、お間違いが無ければ[Submit]ボタンを押してください。</p>
+      <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+<!--main ここまで-->
+<!--footer ここから-->
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="./index.html">top</a></li>
+        <li><a href="./index.html">work</a></li>
+        <li><a href="./about.html">about</a></li>
+        <li><a href="./contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <a class="footer-logo" href="./index.html">
+      <img src="../image/common/logo.png" alt="Akari">
+    </a>
+    <p class="footer-time">Mail 1205029@stu.hus.ac.jp</p>
+    <p class="copyright"><small>&copy;AKARI HASHI.</small></p>
+  </footer>
+</body>
+<!--footer ここまで-->
+</html>
